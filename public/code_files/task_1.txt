@@ -1,0 +1,6 @@
+import math
+
+print("hello")
+x = 10
+for x in range(10):
+    print(x)

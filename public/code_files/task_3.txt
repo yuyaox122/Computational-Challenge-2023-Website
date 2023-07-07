@@ -1,0 +1,120 @@
+from manim import *
+from manim.utils.color import Colors as col
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import math
+
+config.media_width = "75%"
+config.verbosity = "WARNING"
+
+G = 6.67 * 10 ** -11
+M_sun = 1.9891 * 10 ** 30
+
+planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto']
+masses = np.array([0.055, 0.815, 1.000, 0.107, 317.85, 95.159, 14.500, 17.204, 0.003])  # Earth masses
+semi_major = np.array([0.387, 0.723, 1.000, 1.523, 5.202, 9.576, 19.293, 30.246, 39.509])  # AU
+radii = np.array([0.383, 0.949, 1.000, 0.533, 11.209, 9.449, 4.007, 3.883, 0.187])  # Earth radii
+rotational_periods = np.array([58.646, 243.018, 0.997, 1.026, 0.413, 0.444, 0.718, 0.671, 6.387])  # days
+orbital_periods = np.array([0.241, 0.615, 1.000, 1.881, 11.861, 29.628, 84.747, 166.344, 248.348])  # years
+gravities = np.array([0.37, 0.90, 1.00, 0.38, 2.53, 1.07, 0.90, 1.14, 0.09])  # in terms of g = 9.81 m/s^2
+eccentricities = np.array([0.21, 0.01, 0.02, 0.09, 0.05, 0.06, 0.05, 0.01, 0.25])
+colours = np.array(['#d5d5d5', '#ffc649', '#287ab8', '#c1440e', '#c99039', '#a49b72', '#93b8be', '#3f54ba', '#f5d7c6'])
+
+planet_values = pd.DataFrame({'planet': planets, 'mass': masses,
+                              'a': semi_major, 'lapse radius': radii,
+                              'r_period': rotational_periods, 'o_period': orbital_periods,
+                              'gravity': gravities, 'eccentricities': eccentricities,
+                              'colours': colours})
+
+sun_values = pd.DataFrame({'mass': np.array([332837]), 'a': np.array([None]),
+                           'lapse radius': np.array([109.12]), 'r_period': np.array([None]),
+                           'o_period': np.array([None]), 'gravity': np.array([27.95])})
+
+semi_minor = semi_major * (1 - eccentricities ** 2)
+planet_values.insert(3, 'b', semi_minor)
+
+
+def get_r(a, epsilon, theta):
+    return (a * (1 - epsilon ** 2)) / (1 - epsilon * math.cos(theta))
+
+
+class TwoDAnimation(MovingCameraScene):
+    def construct(self):
+        inner_axes = Axes(
+            x_range=[-2, 2, 0.5],
+            y_range=[-2, 2, 0.5],
+            x_length=4,
+            y_length=4,
+            tips=False,
+            axis_config={
+                "font_size": 10
+            }
+        ).add_coordinates()
+
+        self.camera.frame.save_state()
+        inner_orbits = []
+
+        sun = Circle(0.2, color="#ffd000", fill_opacity=1)
+
+        outer_axes = Axes(
+            x_range=[-40, 40, 10],
+            y_range=[-40, 40, 10],
+            x_length=80,
+            y_length=80,
+            tips=False,
+            axis_config={
+                "font_size": 200,
+                "stroke_width": 20
+            }
+        ).add_coordinates()
+
+        for i in range(4):
+            orbit = ParametricFunction(
+                lambda t: np.array(
+                    [get_r(planet_values.loc[i].at['a'], planet_values.loc[i].at['eccentricities'], t) * math.cos(t),
+                     get_r(planet_values.loc[i].at['a'], planet_values.loc[i].at['eccentricities'], t) * math.sin(t),
+                     0]),
+                t_range=(0, 2 * PI, 2 * PI / 1000),
+                color=planet_values.loc[i].at['colours']
+            )
+            orbit.scale(1.7)
+            inner_orbits.append(orbit)
+
+        inner_axes.scale(1.7)
+
+        self.play(Write(inner_axes, lag_ratio=0.01))
+        self.play(Create(sun))
+        self.play(Create(VGroup(*[orbit for orbit in inner_orbits]), lag_ratio=0.4))
+        '''
+        for inner_orbit in inner_orbits:
+          self.play(Create(inner_orbit))
+        '''
+
+        outer_orbits = []
+
+        for i in range(4):
+            orbit = ParametricFunction(
+                lambda t: np.array([get_r(planet_values.loc[i + 4].at['a'],
+                                          planet_values.loc[i + 4].at['eccentricities'], t) * math.cos(t),
+                                    get_r(planet_values.loc[i + 4].at['a'],
+                                          planet_values.loc[i + 4].at['eccentricities'], t) * math.sin(t), 0]),
+                t_range=(0, 2 * PI, 2 * PI / 1000),
+                color=planet_values.loc[i + 4].at['colours'],
+                stroke_width=50
+            )
+            outer_orbits.append(orbit)
+
+        self.wait(0.3)
+
+        self.play(Transform(inner_axes, outer_axes), self.camera.frame.animate.set(width=outer_axes.width * 2.1))
+        self.play(Create(VGroup(*[orbit for orbit in outer_orbits]), lag_ratio=0.4))
+
+        jupiter = Dot(radius=1).set_color(planet_values.loc[4].at['colours'])
+        saturn = Dot(radius=1).set_color(planet_values.loc[5].at['colours'])
+
+        self.play(
+            MoveAlongPath(jupiter, outer_orbits[0]), rate_func=linear, run_time=1,
+            MoveAlongPath(saturn, outer_orbits[1]), rate_func=linear, run_time=1
+        )
+        self.wait()

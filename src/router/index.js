@@ -70,7 +70,6 @@ router.beforeEach(async (to, from) => {
   if (
     // make sure the user is authenticated
     !userStore.user.isAuthenticated &&
-    // ❗️ Avoid an infinite redirect
     to.name !== 'login' &&  to.name !== 'signup'
   ) {
     // redirect the user to the login page

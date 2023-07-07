@@ -11,7 +11,7 @@
 
             <div class="p-4 bg-white border border-gray-200 rounded-lg grid grid-cols-4 gap-4">
                 <div class="p-4 text-center bg-gray-100 rounded-lg">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyoNipuLHTsJiGMY3J8JXdSRlEulM_g7xwMi7O94aNSUv3F8CcIJvJQeeTgmbqG0aB2M&usqp=CAU" class="mb-6 rounded-full">
+                    <img src="http://localhost:5173/logo.jpg" class="mb-6 rounded-full">
 
                     <p><strong>Yuyao</strong></p>
 
@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="p-4 text-center bg-gray-100 rounded-lg">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyoNipuLHTsJiGMY3J8JXdSRlEulM_g7xwMi7O94aNSUv3F8CcIJvJQeeTgmbqG0aB2M&usqp=CAU" class="mb-6 rounded-full">
+                    <img src="http://localhost:5173/logo.jpg" class="mb-6 rounded-full">
 
                     <p><strong>Yuyao</strong></p>
 
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="p-4 text-center bg-gray-100 rounded-lg">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyoNipuLHTsJiGMY3J8JXdSRlEulM_g7xwMi7O94aNSUv3F8CcIJvJQeeTgmbqG0aB2M&usqp=CAU" class="mb-6 rounded-full">
+                    <img src="http://localhost:5173/logo.jpg" class="mb-6 rounded-full">
 
                     <p><strong>Yuyao</strong></p>
 
@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="p-4 text-center bg-gray-100 rounded-lg">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyoNipuLHTsJiGMY3J8JXdSRlEulM_g7xwMi7O94aNSUv3F8CcIJvJQeeTgmbqG0aB2M&usqp=CAU" class="mb-6 rounded-full">
+                    <img src="http://localhost:5173/logo.jpg" class="mb-6 rounded-full">
 
                     <p><strong>Yuyao</strong></p>
 
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="p-4 text-center bg-gray-100 rounded-lg">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyoNipuLHTsJiGMY3J8JXdSRlEulM_g7xwMi7O94aNSUv3F8CcIJvJQeeTgmbqG0aB2M&usqp=CAU" class="mb-6 rounded-full">
+                    <img src="http://localhost:5173/logo.jpg" class="mb-6 rounded-full">
 
                     <p><strong>Yuyao</strong></p>
 
@@ -69,7 +69,7 @@
             <div class="p-4 bg-white border border-gray-200 rounded-lg">
                 <div class="mb-6 flex items-center justify-between">
                     <div class="flex items-center space-x-6">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyoNipuLHTsJiGMY3J8JXdSRlEulM_g7xwMi7O94aNSUv3F8CcIJvJQeeTgmbqG0aB2M&usqp=CAU" class="w-[40px] rounded-full">
+                        <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
 
                         <p><strong>Yuyao</strong></p>
                     </div>

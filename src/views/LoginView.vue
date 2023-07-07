@@ -5,8 +5,7 @@
               <h1 class="mb-6 text-2xl">Log in</h1>
 
               <p class="mb-6 text-gray-500">
-                  Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate.
-                  Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate.
+                Hello there!
               </p>
 
               <p class="font-bold">

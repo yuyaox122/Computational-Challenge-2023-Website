@@ -1,11 +1,11 @@
 <template>
-  <nav className="py-10 px-8 border-b border-gray-200">
-    <div className="max-w-7xl mx-auto">
+  <nav className="py-10 px-8 border-b border-gray-100">
+    <div className="max-w-6xl mx-auto">
       <div className="flex items-center justify-between">
         <div className="menu-left">
-          <a href="#" className="text-xl">Computational Challenge 2023</a>
+          <h1 href="#" className="text-purple-700">Welcome to Yuyao's Website</h1>
         </div>
-
+ 
         <div className="menu-center flex space-x-12" v-if="userStore.user.isAuthenticated">
           <a href="#" className="text-purple-700">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -39,14 +39,14 @@
             </svg>
           </a>
         </div>
-        
-        <router-link :to= "{path : '/feed'}"><button class="inline-block py-2 px-6 bg-purple-600 text-white rounded-lg">Feed</button></router-link>
-    
         <div className="menu-right">
-          
+        
           <template v-if="userStore.user.isAuthenticated">
+            <!-- <div>
+              <router-link :to= "{path : '/feed'}"><button class="inline-block py-2 px-6 bg-purple-600 text-white rounded-lg">Home</button></router-link>
+            </div> -->
             <a href="#">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyoNipuLHTsJiGMY3J8JXdSRlEulM_g7xwMi7O94aNSUv3F8CcIJvJQeeTgmbqG0aB2M&usqp=CAU" class="h-10 w-10" className="rounded-full">
+              <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
             </a>
           </template>
 
@@ -80,6 +80,12 @@ export default {
     }
   },
 
+  // data() {
+  //     return {
+  //        is_home: false
+  //     }
+  // },
+
   components: {
     Toast
   },
@@ -91,8 +97,10 @@ export default {
 
     if (token) {
       axios.defaults.headers.common["Authorization"] = "Bearer " + token;
+
     } else {
       axios.defaults.headers.common["Authorization"] = "";
+
     }
   }
 }

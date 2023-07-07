@@ -7,6 +7,7 @@ import MessagesView from "../views/MessagesView.vue";
 import SearchView from "../views/SearchView.vue";
 import FindFactors from "@/views/FindFactors.vue";
 import ComputationalChallenge from "@/views/ComputationalChallenge.vue";
+import {useUserStore} from '@/stores/user'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -58,6 +59,23 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     }
   ]
+})
+
+router.beforeEach(async (to, from) => {
+  const userStore = useUserStore()
+  console.log(to)
+  //  if (!userStore.user.isAuthenticated) {
+  //   return { name: 'login' }
+  //   } 
+  if (
+    // make sure the user is authenticated
+    !userStore.user.isAuthenticated &&
+    // ?? Avoid an infinite redirect
+    to.name !== 'login' &&  to.name !== 'signup'
+  ) {
+    // redirect the user to the login page
+    return { name: 'login' }
+  }
 })
 
 export default router

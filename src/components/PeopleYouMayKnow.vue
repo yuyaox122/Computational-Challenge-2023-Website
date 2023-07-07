@@ -5,7 +5,7 @@
         <div class="space-y-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyoNipuLHTsJiGMY3J8JXdSRlEulM_g7xwMi7O94aNSUv3F8CcIJvJQeeTgmbqG0aB2M&usqp=CAU" class="w-[40px] rounded-full">
+                    <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
                     
                     <p class="text-xs"><strong>Yuyao</strong></p>
                 </div>
@@ -15,7 +15,7 @@
 
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyoNipuLHTsJiGMY3J8JXdSRlEulM_g7xwMi7O94aNSUv3F8CcIJvJQeeTgmbqG0aB2M&usqp=CAU" class="w-[40px] rounded-full">
+                    <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
                     
                     <p class="text-xs"><strong>Yuyao</strong></p>
                 </div>
@@ -25,7 +25,7 @@
 
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyoNipuLHTsJiGMY3J8JXdSRlEulM_g7xwMi7O94aNSUv3F8CcIJvJQeeTgmbqG0aB2M&usqp=CAU" class="w-[40px] rounded-full">
+                    <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
                     
                     <p class="text-xs"><strong>Yuyao</strong></p>
                 </div>

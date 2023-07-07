@@ -5,8 +5,7 @@
                   <h1 class="mb-6 text-2xl">Sign up</h1>
 
                 <p class="mb-6 text-gray-500">
-                    Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate.
-                    Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate. Lorem ipsum dolor sit mate.
+                    Hi there!
                 </p>
 
                 <p class="font-bold">
@@ -103,7 +102,6 @@ export default {
                 axios
                     .post('/api/signup/', this.form)
                     .then(response => {
-                      console.log(response)
                         if (response.data.message === 'success') {
                             this.toastStore.showToast(5000, 'The user is registered. Please log in', 'bg-emerald-500')
 
@@ -116,6 +114,7 @@ export default {
                         }
                     })
                     .catch(error => {
+                        this.errors.push(error)
                         console.log('error', error)
                     })
             }

@@ -47,14 +47,14 @@ import axios from 'axios'
 // import 'prismjs/components/prism-markdown'
 // import 'prismjs/themes/prism.css'
 // import 'prismjs/components/prism-clike'
-import { component as VueCodeHighlight } from 'vue-code-highlight';
+// import { component as VueCodeHighlight } from 'vue-code-highlight';
 // import 'prism-es6/components/prism-markup-templating';
 // import 'prism-es6/components/prism-python';
 export default {
   name: 'ComputationalChallenge',
   components: {
     VueTailwindPagination,
-    VueCodeHighlight,
+    // VueCodeHighlight,
     // Prism
     // Task,
   },
@@ -75,30 +75,33 @@ export default {
       this.getData(this.currentPage);
     },
     async getData(pageNumber) {
-      const response = await axios.post(
+      await axios.post(
           '/api/show_section/', {"id": pageNumber, 'category': "COMPUTATIONAL_CHALLENGE"}
+      ).then(response =>{
+        const responseData = response.data;
+        this.currentPage = responseData.page;
+        this.perPage = responseData.perPage;
+        this.total = responseData.total;
+        this.data = response.data.data;
+        // console.log(this.data.code_filename);
+        const self = this
+        // axios.get('http://localhost:5173/code_files/' + this.data.code_filename).then(function(response) {
+        //   self.code_text = String(response.data)
+        //   console.log(self.code_text)
+        // }).catch(error=> {
+        //     console.log('error', error)
+        //     this.errors.push(error)
+        // });
+        // console.log(response.data)
+        this.code_text = String(responseData.data.code)
+
+      }
       ).catch(error => {
           console.log('error', error)
           this.errors.push(error)
       });
 
-      const responseData = response.data;
-      this.currentPage = responseData.page;
-      this.perPage = responseData.perPage;
-      this.total = responseData.total;
-      this.data = response.data.data;
-      // console.log(this.data.code_filename);
-      const self = this
-      // axios.get('http://localhost:5173/code_files/' + this.data.code_filename).then(function(response) {
-      //   self.code_text = String(response.data)
-      //   console.log(self.code_text)
-      // }).catch(error=> {
-      //     console.log('error', error)
-      //     this.errors.push(error)
-      // });
-      // console.log(response.data)
-      this.code_text = String(responseData.data.code)
-      // Prism.highlightAll();
+      
     },
   },
   computed: {

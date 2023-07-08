@@ -14,7 +14,7 @@ import axios from 'axios'
 // import "prismjs/plugins/autolinker/prism-autolinker.css";
 // import Prism from "vue-prism-component";
 // Vue.component("prism", Prism);
-import VueCodeHighlight from 'vue-code-highlight';
+// import VueCodeHighlight from 'vue-code-highlight';
 
 
 
@@ -24,6 +24,6 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router, axios)
-app.use(VueCodeHighlight) //registers the v-highlight directive
+// app.use(VueCodeHighlight) //registers the v-highlight directive
 app.mount('#app')
 

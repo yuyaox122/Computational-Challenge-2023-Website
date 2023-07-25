@@ -58,9 +58,9 @@
     </nav>
 </template>
 
-<script>
+<!-- <script>
     var url = document.URL;
     var url = url.replace("http://localhost:5173/", '')
     console.log(url);
     
-</script>
+</script> -->

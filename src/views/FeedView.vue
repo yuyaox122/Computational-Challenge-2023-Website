@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="p-4 border-t border-gray-100 flex justify-between">
-                        <router-link :to="{ path: '/computational_challenge' }"><button
+                        <router-link :to="{ path: 'about' }"><button
                                 class="inline-block py-1 px-6 bg-purple-600 text-white rounded-lg">View</button></router-link>
                     </div>
                 </div>

@@ -17,6 +17,7 @@
     "postscribe": "^2.0.8",
     "Prism": "^2.0.0",
     "prismjs": "^1.29.0",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "vue": "^3.3.4",
     "vue-code-highlight": "^0.7.8",
     "vue-prism-component": "^2.0.0",

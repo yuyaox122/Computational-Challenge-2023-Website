@@ -5,22 +5,21 @@
     <RouterView/>
   </main>
 
-  <Toast/>
 </template>
 
 <script>
-import axios from 'axios'
-import Toast from '@/components/Toast.vue'
+// import axios from 'axios'
+// import Toast from '@/components/Toast.vue'
 import Navbar from '@/components/Navbar.vue'
 import {useUserStore} from '@/stores/user'
 
 export default {
   setup() {
-    const userStore = useUserStore()
+    // const userStore = useUserStore()
 
-    return {
-      userStore
-    }
+    // return {
+    //   userStore
+    // }
   },
 
   // data() {
@@ -35,17 +34,17 @@ export default {
   },
 
   beforeCreate() {
-    this.userStore.initStore()
+    // this.userStore.initStore()
 
-    const token = this.userStore.user.access
+    // const token = this.userStore.user.access
 
-    if (token) {
-      axios.defaults.headers.common["Authorization"] = "Bearer " + token;
+    // if (token) {
+    //   axios.defaults.headers.common["Authorization"] = "Bearer " + token;
 
-    } else {
-      axios.defaults.headers.common["Authorization"] = "";
+    // } else {
+    //   axios.defaults.headers.common["Authorization"] = "";
 
-    }
+    // }
   }
 }
 </script>

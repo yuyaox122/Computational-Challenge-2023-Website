@@ -8,14 +8,14 @@
                     <div class="flex flex-shrink-0 items-center">
                         <img class="h-8 w-auto"
                             src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Planet_collage_to_scale.jpg"
-                            alt="Your Company">
+                            alt="Planets">
                     </div>
                     <div class="sm:ml-6 sm:block">
                         <div class="flex space-x-4">
                             <a id="about" href="about"
-                                class="active:bg-gray-900 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
                             <a href="task1"
-                                class="visited:bg-gray-900 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Task
+                                id = "taskOne" onclick="changeColour();" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Task
                                 1</a>
                             <a href="task2"
                                 class="visited:bg-gray-900 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Task
@@ -31,9 +31,20 @@
     </nav>
 </template>
 
-<!-- <script>
-    var url = document.URL;
-    var url = url.replace("http://localhost:5173/", '')
-    console.log(url);
-    
-</script> -->
+<script>
+    // const task1 = document.querySelector("#task-1-button");
+    // console.log(task1);
+    let taskone = document.getElementById('taskOne');
+    if (taskone) {
+        taskone.addEventListener("click", changeColour); }
+
+    function changeColour() {
+        console.log(taskone);
+        taskone.classList.toggle("bg-yellow-900");
+    }
+    // function changeColour() {
+    //     const new_button = document.getElementById("about");
+    //     // console.log(new_button);
+    //     new_button.classList.toggle('bg-gray-900');
+    // }
+</script>

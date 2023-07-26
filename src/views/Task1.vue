@@ -9,18 +9,17 @@
         </header>
         <section
             class="overflow-hidden container flex items-center justify-center h-screen m-auto bg-fixed bg-center bg-cover custom-img">
-            <video class="z-30 rounded-lg m-auto max-w-[65%]" title="vimeo-player"
-                src="/src/assets/Task1.mp4" loop="true"
-                autoplay="autoplay" muted
-                frameborder="0" allowfullscreen controls></video>
+            <video class="z-30 rounded-lg m-auto max-w-[65%]" title="vimeo-player" src="/src/assets/Task1.mp4" loop="true"
+                autoplay="autoplay" muted frameborder="0" allowfullscreen controls></video>
         </section>
         <section
             class="overflow-hidden container flex items-center justify-center h-screen m-auto bg-fixed bg-center bg-cover custom-img">
             <p class="font-['montserrat'] text-xl">How did we do this?</p>
         </section>
-        <section class="overflow-hidden container flex items-center justify-center m-auto h-100 bg-fixed bg-cover bg-[url('/src/assets/TapestryOfBlazingStarbirth.jpg')]">
+        <section
+            class="overflow-hidden container flex items-center justify-center m-auto h-100 bg-fixed bg-cover bg-[url('/src/assets/TapestryOfBlazingStarbirth.jpg')]">
             <img src="/src/assets/task_1_code.png" class="overflow-hidden rounded-lg m-auto py-10 max-w-[80%] opacity-90">
-        </section> 
+        </section>
     </div>
 </template>
 

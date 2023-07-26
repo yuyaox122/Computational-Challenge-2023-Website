@@ -9,6 +9,7 @@ import FindFactors from "@/views/FindFactors.vue";
 import About from "@/views/About.vue";
 import {useUserStore} from '@/stores/user'
 import Task1 from "@/views/Task1.vue";
+import Task2 from "@/views/Task2.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -42,6 +43,11 @@ const router = createRouter({
       path: '/task1',
       name: 'task1',
       component: Task1
+    },
+    {
+      path: '/task2',
+      name: 'task2',
+      component: Task2
     },
     {
     path: '/messages',

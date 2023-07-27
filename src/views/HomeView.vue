@@ -5,7 +5,7 @@
               <router-link :to= "{path : '/login'}"><button class="inline-block py-2 px-6 bg-purple-600 text-white rounded-lg">Click to log in</button></router-link>
             </div>
             <a href="#">
-              <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
+              <img src="http://api.my-innovations.co.uk/logo.jpg" class="w-[40px] rounded-full">
             </a>
           </template>
   </main>

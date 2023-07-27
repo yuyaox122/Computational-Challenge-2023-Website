@@ -5,7 +5,7 @@
                 <div class="space-y-4">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-2">
-                            <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
+                            <img src="http://api.my-innovations.co.uk/logo.jpg" class="w-[40px] rounded-full">
 
                             <p class="text-xs"><strong>Yuyao</strong></p>
                         </div>
@@ -15,7 +15,7 @@
 
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-2">
-                            <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
+                            <img src="http://api.my-innovations.co.uk/logo.jpg" class="w-[40px] rounded-full">
 
                             <p class="text-xs"><strong>Yuyao</strong></p>
                         </div>
@@ -25,7 +25,7 @@
 
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-2">
-                            <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
+                            <img src="http://api.my-innovations.co.uk/logo.jpg" class="w-[40px] rounded-full">
 
                             <p class="text-xs"><strong>Yuyao</strong></p>
                         </div>
@@ -47,7 +47,7 @@
                             <span class="text-xs text-gray-500 leading-none">2 min ago</span>
                         </div>
                         <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300">
-                            <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
+                            <img src="http://api.my-innovations.co.uk/logo.jpg" class="w-[40px] rounded-full">
                         </div>
                     </div>
 
@@ -59,13 +59,13 @@
                             <span class="text-xs text-gray-500 leading-none">2 min ago</span>
                         </div>
                         <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300">
-                            <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
+                            <img src="http://api.my-innovations.co.uk/logo.jpg" class="w-[40px] rounded-full">
                         </div>
                     </div>
 
                     <div class="flex w-full mt-2 space-x-3 max-w-md">
                         <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300">
-                            <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
+                            <img src="http://api.my-innovations.co.uk/logo.jpg" class="w-[40px] rounded-full">
                         </div>
                         <div>
                             <div class="bg-gray-300 p-3 rounded-r-lg rounded-bl-lg">

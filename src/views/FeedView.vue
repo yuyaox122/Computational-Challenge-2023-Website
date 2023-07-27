@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto grid grid-cols-4 gap-4">
         <div class="main-left col-span-1">
             <div class="p-4 bg-white border border-gray-200 text-center rounded-lg">
-                <img src="http://localhost:5173/logo.jpg"
+                <img src="http://api.my-innovations.co.uk/logo.jpg"
                     class="mb-6 rounded-full" with="20%" length="20%">
 
                 <p><strong>Yuyao</strong></p>
@@ -34,7 +34,7 @@
 
                 </div>
 
-                <img src="http://localhost:5173/computational_challenge.jpg"
+                <img src="http://api.my-innovations.co.uk/computational_challenge.jpg"
                         class="w-full rounded-lg">
 
                 <div class="my-6 flex justify-between">
@@ -69,7 +69,7 @@
             <div class="p-4 bg-white border border-gray-200 rounded-lg">
                 <div class="mb-6 flex items-center justify-between">
                     <div class="flex items-center space-x-6">
-                        <img src="http://localhost:5173/logo.jpg"
+                        <img src="http://api.my-innovations.co.uk/logo.jpg"
                             class="w-[40px] rounded-full">
 
                         <p><strong>Yuyao</strong></p>
@@ -118,7 +118,7 @@
             <div class="p-4 bg-white border border-gray-200 rounded-lg">
                 <div class="mb-6 flex items-center justify-between">
                     <div class="flex items-center space-x-6">
-                        <img src="http://localhost:5173/logo.jpg"
+                        <img src="http://api.my-innovations.co.uk/logo.jpg"
                             class="w-[40px] rounded-full">
 
                         <p><strong>Yuyao</strong></p>

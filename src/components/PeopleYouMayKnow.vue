@@ -5,7 +5,7 @@
         <div class="space-y-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
+                    <img src="http://api.my-innovations.co.uk/logo.jpg" class="w-[40px] rounded-full">
                     
                     <p class="text-xs"><strong>Yuyao</strong></p>
                 </div>
@@ -15,7 +15,7 @@
 
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
+                    <img src="http://api.my-innovations.co.uk/logo.jpg" class="w-[40px] rounded-full">
                     
                     <p class="text-xs"><strong>Yuyao</strong></p>
                 </div>
@@ -25,7 +25,7 @@
 
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <img src="http://localhost:5173/logo.jpg" class="w-[40px] rounded-full">
+                    <img src="http://api.my-innovations.co.uk/logo.jpg" class="w-[40px] rounded-full">
                     
                     <p class="text-xs"><strong>Yuyao</strong></p>
                 </div>

@@ -8,12 +8,12 @@
     </header>
     
     <section
-        class="h-screen grid grid-cols-2 gap-6 mx-[2%] my-[2%]">
-        <video class="col-span-1 rounded-lg m-auto" title="vimeo-player"
+        class="h-screen grid grid-rows-2 grid-cols-1 gap-4 mx-[2%] my-[2%]">
+        <video class="row-span-1 row-start-1 max-h-[90%] rounded-lg m-auto" title="vimeo-player"
             src="/src/assets/Task72013.mp4" loop="true"
             autoplay="autoplay" muted
             frameborder="0" allowfullscreen controls></video>
-        <video class="col-span-1 rounded-lg m-auto" title="vimeo-player"
+        <video class="row-span-1 row-start-2 max-h-[90%] rounded-lg m-auto" title="vimeo-player"
             src="/src/assets/Task78567.mp4" loop="true"
             autoplay="autoplay" muted
             frameborder="0" allowfullscreen controls></video>

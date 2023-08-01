@@ -1,26 +1,25 @@
 <template>
-    <div class="overflow-y-scroll scroll-smooth">
-        <header class="relative flex items-center justify-center h-screen overflow-hidden">
-            <video class="absolute z-10 w-auto min-w-full min-h-full max-w-none" style="pointer-events: none;" loop="true"
-                autoplay="autoplay" controls muted>
-                <source src="/src/assets/SpaceBackground.mp4" type="video/mp4" />
-            </video>
-            <h1 class="z-30 text-white underline decoration-sky-500/[.33] font-['montserrat'] text-5xl">Task 1</h1>
-        </header>
-        <section
-            class="overflow-hidden container flex items-center justify-center h-screen m-auto bg-fixed bg-center bg-cover custom-img">
-            <video class="z-30 rounded-lg m-auto max-w-[65%]" title="vimeo-player" src="/src/assets/Task1.mp4" loop="true"
-                autoplay="autoplay" muted frameborder="0" allowfullscreen controls></video>
-        </section>
-        <section
-            class="overflow-hidden container flex items-center justify-center h-screen m-auto bg-fixed bg-center bg-cover custom-img">
-            <p class="font-['montserrat'] text-xl">How did we do this?</p>
-        </section>
-        <section
-            class="overflow-hidden container flex items-center justify-center m-auto h-100 bg-fixed bg-cover bg-[url('/src/assets/TapestryOfBlazingStarbirth.jpg')]">
-            <img src="/src/assets/task_1_code.png" class="overflow-hidden rounded-lg m-auto py-10 max-w-[80%] opacity-90">
-        </section>
-    </div>
+    <header class="relative flex items-center justify-center h-screen overflow-hidden">
+        <video class="absolute z-10 w-auto min-w-full min-h-full max-w-none" style="pointer-events: none;" loop="true"
+            autoplay="autoplay" controls muted>
+            <source src="/src/assets/SpaceBackground.mp4" type="video/mp4" />
+        </video>
+        <h1
+            class="animate-fade-down animate-once animate-ease-in z-30 text-white underline decoration-sky-500/[.33] font-['montserrat'] text-5xl">
+            Task 1</h1>
+    </header>
+    <section class="container flex items-center justify-center h-screen m-auto bg-fixed bg-center bg-cover mx-[2%] my-[2%]">
+        <video class="z-30 rounded-lg max-w-[75%]" title="vimeo-player" src="/src/assets/Task1.mp4" loop="true"
+            autoplay="autoplay" muted frameborder="0" allowfullscreen controls></video>
+    </section>
+    <section class="h-screen">
+        <p class="flex justify-center items-center font-['montserrat'] text-5xl font-bold">Task 1 - Kepler's Third Law</p>
+        <p class="flex justify-center items-center font-['montserrat'] text-xl my-10">Lorem ipsum</p>
+    </section>
+
+    <section class="bg-center h-max bg-repeat-y bg-cover bg-fixed bg-[url('/src/assets/SombreroGalaxy.jpg')]">
+        <img src="/src/assets/Task1.png" class="rounded-lg m-auto py-10 max-w-[80%] opacity-75">
+    </section>
 </template>
 
 <script>

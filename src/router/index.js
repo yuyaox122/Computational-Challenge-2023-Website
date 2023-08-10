@@ -7,6 +7,7 @@ import Task4 from "@/views/Task4.vue";
 import Task5 from "@/views/Task5.vue";
 import Task6 from "@/views/Task6.vue";
 import Task7 from "@/views/Task7.vue";
+import Paper from "@/views/Paper.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       path: '/task7',
       name: 'task7',
       component: Task7
+    },
+    {
+      path: '/paper',
+      name: 'paper',
+      component: Paper
     },
   ]
 })

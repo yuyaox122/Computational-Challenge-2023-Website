@@ -30,6 +30,9 @@
                             <a href="task7"
                                 class="text-white hover:bg-gray-900 hover:text-white rounded-md px-4 py-4 text-sm font-medium">Task
                                 7</a>
+                            <a href="paper"
+                                class="text-white hover:bg-gray-900 hover:text-white rounded-md px-4 py-4 text-sm font-medium">Paper
+                                </a>
                         </div>
                 </div>
                 <div class="flex items-center text-white h-8 py-4 px-8 font-bold text-sm font-medium border-l border-white-900">

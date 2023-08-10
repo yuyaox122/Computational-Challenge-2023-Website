@@ -11,12 +11,8 @@
     
     <section class="h-screen">
         <p class="flex justify-center items-center font-['montserrat'] text-5xl font-bold">Paper</p>
-        <p class="flex justify-center items-center font-['montserrat'] text-xl my-10">Lorem ipsum</p>
+        <p class="flex justify-center items-center font-['montserrat'] text-xl my-10"><a href="src/assets/ComputationalChallengePaper.pdf">We wrote a cool  paper </a></p>
     </section>
-
-    <section class="flex items-center justify-center h-screen">
-        <embed style="width:100%; height: 100%; border: none" src="src\assets\ComputationalChallengePaper.pdf"/>
-    </section> 
 
 </template>
 

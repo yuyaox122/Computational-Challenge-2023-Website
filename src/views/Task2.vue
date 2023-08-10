@@ -14,7 +14,7 @@
 
     <section
         class="h-screen">
-        <p class="flex justify-center items-center font-['montserrat'] text-5xl font-bold">Task 2 - Elliptical Orbits</p>
+        <p class="flex justify-center items-center font-['montserrat'] text-5xl font-bold">Task 2 - Elliptical orbits</p>
         <div class="grid grid-cols-3 gap-6 grid-rows-2 mx-[2%] my-[2%]"></div>
         <p class="flex justify-center items-center font-['montserrat'] text-xl my-10">Lorem ipsum</p>
     </section>

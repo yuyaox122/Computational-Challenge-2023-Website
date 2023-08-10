@@ -14,7 +14,7 @@
 
     <section
         class="h-screen">
-        <p class="flex justify-center items-center font-['montserrat'] text-5xl font-bold">Task 4 - 3D Animation</p>
+        <p class="flex justify-center items-center font-['montserrat'] text-5xl font-bold">Task 4 - 3D animation</p>
         <p class="flex justify-center items-center font-['montserrat'] text-xl my-10">Lorem ipsum</p>
     </section>
 

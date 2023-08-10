@@ -11,25 +11,21 @@
         class="h-screen grid grid-cols-2 gap-6 grid-rows-2 mx-[2%] my-[2%]">
         <video class="col-span-1 row-span-1 rounded-lg m-auto" title="vimeo-player"
             src="/src/assets/Task5Mercury.mp4" loop="true"
-            autoplay="autoplay" muted
             frameborder="0" allowfullscreen controls></video>
         <video class="col-span-1 row-span-1 rounded-lg m-auto" title="vimeo-player"
             src="/src/assets/Task5Mars.mp4" loop="true"
-            autoplay="autoplay" muted
             frameborder="0" allowfullscreen controls></video>
         <video class="col-span-1 row-span-1 rounded-lg m-auto" title="vimeo-player"
             src="/src/assets/Task5Saturn.mp4" loop="true"
-            autoplay="autoplay" muted
             frameborder="0" allowfullscreen controls></video>
         <video class="col-span-1 row-span-1 rounded-lg m-auto" title="vimeo-player"
             src="/src/assets/Task5Pluto.mp4" loop="true"
-            autoplay="autoplay" muted
             frameborder="0" allowfullscreen controls></video>
     </section>  
 
     <section
         class="h-screen">
-        <p class="flex justify-center items-center font-['montserrat'] text-5xl font-bold my-16">Task 5 - Eccentric Orbits</p>
+        <p class="flex justify-center items-center font-['montserrat'] text-5xl font-bold my-16">Task 5 - Eccentric orbits</p>
         <p class="flex justify-center items-center font-['montserrat'] text-xl my-4">Lorem ipsum</p>
     </section>
     

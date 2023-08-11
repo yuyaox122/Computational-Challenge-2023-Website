@@ -30,7 +30,7 @@
                             <a href="task7"
                                 class="text-white hover:bg-gray-900 hover:text-white rounded-md px-4 py-4 text-sm font-medium">Task
                                 7</a>
-                            <a href="src/assets/ComputationalChallengePaper.pdf" target="_blank" rel="noopener noreferrer"
+                            <a href="assets/ComputationalChallengePaper.pdf" target="_blank" rel="noopener noreferrer"
                                 class="text-white hover:bg-gray-900 hover:text-white rounded-md px-4 py-4 text-sm font-medium">Paper
                                 </a>
                         </div>

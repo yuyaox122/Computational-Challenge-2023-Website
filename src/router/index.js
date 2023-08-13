@@ -53,13 +53,17 @@ const router = createRouter({
       component: Task7
     },
     {
-      path: '/:catchAll(.*)',
+      path: '/error',
       name: 'ErrorPage',
       component: ErrorPage
     },
     {
       path: '/',
       redirect: '/about'
+    },
+    {
+      path: '/:catchAll(.*)',
+      redirect: '/error'
     },
   ]
 })

@@ -8,18 +8,27 @@
            class="relative overflow-hidden leading-none rounded-lg m-auto py-10 w-[80%] opacity-90">
     </div>
   </section>
+  <section class="bg-center bg-cover bg-fixed bg-[url('/src/assets/Sus.jpg')]">
+    <p class="flex justify-center items-center font-['montserrat'] text-5xl text-white font-bold">BPhO 2023 - Solar System Orbits</p>
+  </section>
   <section
-      class="overflow-hidden container flex items-center justify-center h-screen m-auto bg-fixed bg-center bg-cover">
-    <iframe class = "max-w-[80%]" width="853" height="480" src="https://www.youtube.com/embed/B8ggyEylWQc" title="Α Standard Atmosphere"
-            frameborder="0"
+      class="flex items-center justify-center m-auto bg-fixed bg-center bg-cover bg-[url('/src/assets/Sus.jpg')] py-[3%]">
+    <iframe class = "max-w-[100%]" width="960" height="540" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Α Standard Atmosphere"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
   </section>
 
-  <section class="h-screen">
-    <p class="flex justify-center items-center font-['montserrat'] text-5xl font-bold">BPhO 2023 - Solar System Orbits</p>
-    <p class="flex justify-center items-center font-['montserrat'] text-xl my-10">Lorem ipsum</p>
+  <section class="bg-center bg-cover bg-fixed bg-[url('/src/assets/Sus.jpg')]">
+    <p class="flex justify-center items-center font-['montserrat'] text-5xl text-white font-bold py-[3%]">Previous entries</p>
+    <p class="flex justify-center items-center font-['montserrat'] text-3xl text-white font-bold">BPhO 2022 - A Standard Atmosphere </p>
   </section>
+  <section
+      class="flex items-center justify-center m-auto bg-fixed bg-center bg-cover bg-[url('/src/assets/Sus.jpg')] py-[3%]">
+    <iframe class = "max-w-[100%]" width="720" height="405" src="https://www.youtube.com/embed/B8ggyEylWQc" title="Α Standard Atmosphere"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+  </section>
+  
 </template>
 
 <script>

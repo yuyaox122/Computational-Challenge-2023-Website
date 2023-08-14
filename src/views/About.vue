@@ -13,7 +13,7 @@
   </section>
   <section
       class="flex items-center justify-center m-auto bg-fixed bg-center bg-cover bg-[url('/src/assets/Sus.jpg')] py-[3%]">
-    <iframe class = "max-w-[100%]" width="960" height="540" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Α Standard Atmosphere"
+    <iframe class = "max-w-[100%]" width="960" height="540" src="https://youtu.be/yo_z0qslFwQ" title="Solar System"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
   </section>

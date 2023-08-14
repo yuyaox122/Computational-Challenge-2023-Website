@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: 
+    {
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif']
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+    require('tailwindcss-animated')
+  ],
 }

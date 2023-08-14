@@ -1,80 +1,71 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import SignupView from "../views/SignupView.vue";
-import LoginView from "../views/LoginView.vue";
-import FeedView from "../views/FeedView.vue";
-import MessagesView from "../views/MessagesView.vue";
-import SearchView from "../views/SearchView.vue";
-import FindFactors from "@/views/FindFactors.vue";
-import ComputationalChallenge from "@/views/ComputationalChallenge.vue";
-import {useUserStore} from '@/stores/user'
+import About from "@/views/About.vue";
+import Task1 from "@/views/Task1.vue";
+import Task2 from "@/views/Task2.vue";
+import Task3 from "@/views/Task3.vue";
+import Task4 from "@/views/Task4.vue";
+import Task5 from "@/views/Task5.vue";
+import Task6 from "@/views/Task6.vue";
+import Task7 from "@/views/Task7.vue";
+import ErrorPage from "@/views/ErrorPage.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    },
-    {
-      path: '/signup',
-      name: 'signup',
-      component: SignupView
-    },
-    {
-      path: '/login',
-      name: 'login',
-      component: LoginView
-    },
-    {
-      path: '/feed',
-      name: 'feed',
-      component: FeedView
-    },
-    {
-      path: '/computational_challenge',
-      name: 'computational_challenge',
-      component: ComputationalChallenge,
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
-    path: '/messages',
-    name: 'messages',
-    component: MessagesView
-    },
-    {
-    path: '/search',
-    name: 'search',
-    component: SearchView
-    },
-    {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
+      component: About,
+    },
+    {
+      path: '/task1',
+      name: 'task1',
+      component: Task1
+    },
+    {
+      path: '/task2',
+      name: 'task2',
+      component: Task2
+    },
+    {
+      path: '/task3',
+      name: 'task3',
+      component: Task3
+    },
+    {
+      path: '/task4',
+      name: 'task4',
+      component: Task4
+    },
+    {
+      path: '/task5',
+      name: 'task5',
+      component: Task5
+    },
+    {
+      path: '/task6',
+      name: 'task6',
+      component: Task6
+    },
+    {
+      path: '/task7',
+      name: 'task7',
+      component: Task7
+    },
+    {
+      path: '/error',
+      name: 'ErrorPage',
+      component: ErrorPage
+    },
+    {
+      path: '/',
+      redirect: '/about'
+    },
+    {
+      path: '/:catchAll(.*)',
+      redirect: '/error'
+    },
   ]
-})
-
-router.beforeEach(async (to, from) => {
-  const userStore = useUserStore()
-  console.log(to)
-  //  if (!userStore.user.isAuthenticated) {
-  //   return { name: 'login' }
-  //   } 
-  if (
-    // make sure the user is authenticated
-    !userStore.user.isAuthenticated &&
-    to.name !== 'login' &&  to.name !== 'signup'
-  ) {
-    // redirect the user to the login page
-    return { name: 'login' }
-  }
 })
 
 export default router

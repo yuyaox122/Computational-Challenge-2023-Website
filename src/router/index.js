@@ -7,6 +7,7 @@ import Task4 from "@/views/Task4.vue";
 import Task5 from "@/views/Task5.vue";
 import Task6 from "@/views/Task6.vue";
 import Task7 from "@/views/Task7.vue";
+import Unity from "@/views/Unity.vue";
 import ErrorPage from "@/views/ErrorPage.vue"
 
 const router = createRouter({
@@ -51,6 +52,11 @@ const router = createRouter({
       path: '/task7',
       name: 'task7',
       component: Task7
+    },
+    {
+      path: '/unity',
+      name: 'unity',
+      component: Unity
     },
     {
       path: '/error',

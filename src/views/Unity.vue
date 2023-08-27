@@ -10,7 +10,7 @@
             Unity Project</h1>
     </header>
     <section class="bg-center h-max bg-repeat-y bg-cover bg-fixed bg-[url('/src/assets/SombreroGalaxy.jpg')]">
-      <iframe class="absolute z-10 w-auto min-w-full min-h-full max-w-none" src="/assets/Computational_Challenge_Build/index.html">
+      <iframe class="absolute z-10 w-auto min-w-full min-h-full max-w-none" src="/src/assets/Computational_Challenge_Build/index.html">
     </iframe>
     </section>
 </template>
@@ -24,7 +24,7 @@ export default {
     components: {
     },
     mounted() {
-      postscribe('#script-placeholder', '<script type="text/x-mathjax-config"> MathJax.Hub.Config({   tex2jax: {inlineMath: [[\'$\',\'$\'], [\'\\\\(\',\'\\\\)\']]} }); <\/script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"><\/script>')
+      
     },
 }
 </script> 

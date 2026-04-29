@@ -98,9 +98,3 @@ This project was awarded **Top 5 Gold** in the **BPhO Computational Challenge 20
 ## 🔗 Related Repositories
 
 - [Solar-System-Unity](https://github.com/yuyaox122/Solar-System-Unity) — the Unity 3D simulation that this website presents
-
----
-
-## 📄 License
-
-This project was created for the BPhO Computational Challenge 2023. All rights reserved by the authors.

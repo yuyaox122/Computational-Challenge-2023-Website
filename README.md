@@ -2,6 +2,7 @@
 
 [![Website](https://img.shields.io/badge/Website-Live-blue)](http://computational-challenge.netlify.app/)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1cvxSeJW4UPG7EYQNYBPJ6KV8dELnf206?usp=sharing)
+[![Research Paper](https://img.shields.io/badge/Research-Paper-orange)](https://www.overleaf.com/read/snrcdymjktzx#feda45)
 
 ## About the Challenge
 
@@ -13,12 +14,28 @@ This repository contains the **Vue.js website** built to present the project, al
 
 ---
 
+## Research Paper
+
+📄 **["Plotting eccentric Kepler orbits from instantaneous position and velocity"](https://www.overleaf.com/read/snrcdymjktzx#feda45)**  
+*Zachary Yen, Yuyao Xie* 
+
+This paper extends the orbital plotting methods developed for the challenge to cover cases where only instantaneous position and velocity are known, rather than orbital parameters. It covers:
+
+- **Central-force problems**: Deriving semi-major axis and eccentricity from velocity and position vectors
+- **Two-body systems**: Extending analysis to systems with comparable masses orbiting a common barycentre  
+- **Non-elliptical trajectories**: Mathematical treatment of parabolic and hyperbolic orbits in Cartesian coordinates
+
+[**Read the full paper →**](https://www.overleaf.com/read/snrcdymjktzx#feda45)
+
+---
+
 ## Links
 
 | Resource | Link |
 |---|---|
 | 🌐 Project Website | [http://computational-challenge.netlify.app/](http://computational-challenge.netlify.app/)|
 | 📓 Google Colab (all tasks) | [Open in Colab](https://colab.research.google.com/drive/1cvxSeJW4UPG7EYQNYBPJ6KV8dELnf206?usp=sharing) |
+| 📄 Research Paper | [View on Overleaf](https://www.overleaf.com/read/snrcdymjktzx#feda45) |
 | 🎮 Unity Solar System | [Solar System Unity Project](https://github.com/yuyaox122/Solar-System-Unity) |
 
 ---
@@ -132,19 +149,6 @@ The Manim Python code for all 7 tasks lives in the [Google Colab notebook](https
 3. Run the **Global Functions and Init** cell to load all planetary data
 4. Run any individual Task cell and execute the corresponding `%manim` magic command to render the animation
 
-> ⚠️ Manim installation in Colab takes a few minutes on first run. A GPU runtime is not required.
-
 ---
-
-## Running the Website Locally
-
-```bash
-npm install
-npm run dev
-```
-
-Build for production:
-
-```bash
-npm run build
+ run build
 ```

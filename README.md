@@ -17,7 +17,7 @@ This repository contains the **Vue.js website** built to present the project, al
 
 | Resource | Link |
 |---|---|
-| 🌐 Project Website | [challenges.my-innovations.co.uk](http://computational-challenge.netlify.app/)|
+| 🌐 Project Website | [http://computational-challenge.netlify.app/](http://computational-challenge.netlify.app/)|
 | 📓 Google Colab (all tasks) | [Open in Colab](https://colab.research.google.com/drive/1cvxSeJW4UPG7EYQNYBPJ6KV8dELnf206?usp=sharing) |
 | 🎮 Unity Solar System | [Solar System Unity Project](https://github.com/yuyaox122/Solar-System-Unity) |
 

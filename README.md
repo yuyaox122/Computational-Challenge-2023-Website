@@ -1,8 +1,17 @@
 # BPhO Computational Challenge 2023 — Solar System Orbital Modelling
 
+[![Video](https://img.shields.io/badge/Watch-Video-red?logo=youtube)](https://www.youtube.com/watch?v=yo_z0qslFwQ)
 [![Website](https://img.shields.io/badge/Website-Live-blue)](http://computational-challenge.netlify.app/)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1cvxSeJW4UPG7EYQNYBPJ6KV8dELnf206?usp=sharing)
 [![Research Paper](https://img.shields.io/badge/Research-Paper-orange)](https://www.overleaf.com/read/snrcdymjktzx#feda45)
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=yo_z0qslFwQ">
+    <img src="https://img.youtube.com/vi/yo_z0qslFwQ/maxresdefault.jpg" alt="Watch the project video on YouTube" width="720">
+  </a>
+  <br>
+  <b>▶️ <a href="https://www.youtube.com/watch?v=yo_z0qslFwQ">Watch the project video on YouTube</a></b>
+</p>
 
 ## About the Challenge
 
@@ -33,6 +42,7 @@ This paper extends the orbital plotting methods developed for the challenge to c
 
 | Resource | Link |
 |---|---|
+| 🎬 **Project Video** | [**Watch on YouTube**](https://www.youtube.com/watch?v=yo_z0qslFwQ) |
 | 🌐 Project Website | [http://computational-challenge.netlify.app/](http://computational-challenge.netlify.app/)|
 | 📓 Google Colab (all tasks) | [Open in Colab](https://colab.research.google.com/drive/1cvxSeJW4UPG7EYQNYBPJ6KV8dELnf206?usp=sharing) |
 | 📄 Research Paper | [View on Overleaf](https://www.overleaf.com/read/snrcdymjktzx#feda45) |
@@ -149,6 +159,19 @@ The Manim Python code for all 7 tasks lives in the [Google Colab notebook](https
 3. Run the **Global Functions and Init** cell to load all planetary data
 4. Run any individual Task cell and execute the corresponding `%manim` magic command to render the animation
 
+> ⚠️ Manim installation in Colab takes a few minutes on first run. A GPU runtime is not required.
+
 ---
- run build
+
+## Running the Website Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
 ```
